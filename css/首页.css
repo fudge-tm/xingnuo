@@ -1,0 +1,433 @@
+/* 轮播图 */
+.play{
+    width: 1532.77px;
+    height: 639px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+ }
+ .picture img{width: 1530px;}
+ /* 箭头 */
+ .left{
+    position: absolute;
+    top: 45%;
+    left:0 ; }
+  .left:hover{
+     background: rgba(0, 0,0,0.2);
+  }  
+  .right{
+    position: absolute;
+    top: 45%;
+    right:0 ; }
+  .right:hover{
+     background: rgba(0, 0,0,0.2);
+  }  
+/* SPECIAL */
+.special{
+    position: relative;
+    height: 430px;
+ }
+ .specialword{
+    position: relative;
+    height: 240px;
+ }
+ .driver{
+    position: relative;
+    height: 150px;
+ }
+ .driver span{
+    position: relative;
+    margin-left: 12%;
+     width: 10%;
+     float: left;
+     height: 150px;
+ }
+ .driver span>p{
+    position: absolute;
+    left: 40px;
+    bottom: 7px;
+    color: darkgray;
+ }
+ .carone{
+     background: url(../pictures/笔记本.png) 40px 40px no-repeat ;
+ }
+ .cartwo{
+     background: url(../pictures/bag2.png)  40px 40px no-repeat ;
+ }
+ .carthree{
+    background: url(../pictures/日历.png) 40px 40px no-repeat;
+ }
+ .carfour{
+     background: url(../pictures/邮票.png) 40px 40px no-repeat;
+ }
+ .xian1{
+    width: 100%;
+    height: 20px;
+    position: relative;
+ }
+ .xian1 span{
+    width: 2px;
+    float: left;
+ }
+ .zi1{
+    height: 100px;
+    text-align: center;
+ }
+ 
+ .driver img{
+    height: 124px;
+    position: absolute;
+    top: -4px;
+    width: 86%;
+   text-align: center;
+    /* transition: all 0.6s ease; */
+    transition: all .8s;
+    transform: scale(0);
+ }
+ 
+ /* .carone .cartwo {
+  float: left;
+    display: none;
+    text-align: center;
+    margin-left: 11.8%;
+    width: 10%;
+    transition: 2s;
+    z-index: 10;
+ } */
+ 
+ .onecar :hover img{
+    transform: scale(1);
+ }
+ .onecar :hover {
+   background: white ; 
+}
+
+
+ .twocar :hover img{
+    transform: scale(1);
+ }
+
+ .twocar :hover {
+   background: white ; 
+}
+
+ .threecar :hover img{
+    transform: scale(1);
+ }
+
+ .threecar :hover {
+   background: white ; 
+}
+
+ .fourcar :hover img{
+    transform: scale(1);
+ }
+ 
+ .fourcar :hover {
+   background: white ; 
+}
+    
+ 
+ 
+ 
+ 
+ 
+ /* professional */
+ .professional{
+    position: relative;
+    height: 740px;
+ }
+ 
+ .professionalword{
+    position: relative;
+    height: 240px;
+ }
+ .people{
+    position: relative;
+    height: 500px;
+    background-color: rgb(246, 246, 246);
+ }
+ .people div{
+    position: relative;
+    margin-left: 4%;
+    text-align: center;
+     width: 20%;
+     float: left;
+     height: 380px;
+     background-color: white;
+     /*  */
+     transition: 0.9s;
+     /* top: 5%; */
+    
+ }
+ .people span{
+    position: relative;
+    /* margin-left: 5%; */
+     width: 100%;
+     float: left;
+     height: 380px;
+ 
+     /*  */
+     transition: 0.5s;
+    
+ }
+ /* .people span>p{
+    position: absolute;
+    left: 100px;
+    height: 15px;
+    bottom: 50px;
+    color:rgb(199, 197, 197);
+    background-color: rgb(36, 10, 10);
+ } */
+ .people li{
+    font-size: large;
+    position: absolute;
+    width: 100%;
+    padding-top: 295px;
+    text-align: center;
+ }
+ 
+ .people div:hover{
+ 
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(22, 22, 22, 0.5);
+    color: rgb(112, 149, 235);
+ }
+ 
+ .people :nth-child(1){
+   top: 0%;
+ }
+ .people :nth-child(2){
+    top: 10%;
+  }
+  .people :nth-child(3){
+    top: 3%;
+  }
+  .people :nth-child(4){
+    top: 12%;
+  }
+ 
+ .people1{
+     background: url(../pictures/文笔塔.png)  no-repeat top center ;
+     background-size: contain;
+     top: 5%;
+ }
+ .people2{
+     background: url(../pictures/将军第.jpg)  no-repeat  top  center ;
+     background-size: contain;
+     top: 5%;
+ }
+ .people3{
+    background: url(../pictures/尖仔村.jpg)  no-repeat top center;
+    background-size: contain;
+    top: 5%;
+ }
+ .people4{
+     background: url(../pictures/夕阳.jpg)  no-repeat top center;
+     background-size: contain;
+     top: 5%;
+ }
+ .xian2{
+    width: 100%;
+    height: 20px;
+    position: relative;
+ }
+ .xian2 span{
+    width: 2px;
+    float: left;
+ }
+ .zi2{
+    height: 100px;
+    text-align: center;
+ }
+ 
+ 
+ /* photobox */
+ .photobox {
+    position: relative;
+    height: 850px;
+    width: 90%;
+    background-color: black;
+    color: white;
+    margin-left: 5%;
+    top: -100px;
+ }
+ .bigonebox{
+    height: 330px;
+    position:  relative;
+    width: 100%;
+    background-color: blanchedalmond;
+   
+ }
+ .bigtwobox{
+    height: 520px;
+    position: relative;
+    width: 100%;
+    background-color: rgb(205, 227, 255);
+ }
+ 
+ .bigoneboxleft{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: blueviolet;
+    float: left;
+    overflow: hidden;
+    color: white;
+ }
+ 
+ .bigoneboxright{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: chartreuse;
+    float: left;
+    color: white;
+ }
+ 
+ .box1-1 {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: coral;
+ }
+ .box1-2 {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: rgb(15, 124, 226);
+ }
+ .file :hover{
+    transform:rotate(360deg)  scale(1.0) translate(0,0);
+    transition: 0.6s;
+ 
+ }
+ .box1-1-1{
+    position: relative;
+    width: 100%;
+    height: 50%;
+ background-color: rgb(66, 160, 248);
+ 
+ }
+ 
+ .horse :hover{
+    transform:rotate(360deg)  scale(1.0) translate(0,0);
+    transition: 0.6s;
+ 
+ }
+ 
+ .bigoneboxleft :hover{
+    transform:  scale(1.25);
+    transition: 0.7s;
+    
+ }
+ 
+ .box1-1-2{
+    position: relative;
+    width: 50%;
+    height: 50%;
+ background-color: rgb(73, 152, 243);
+ float: left;
+ }
+ 
+ .box1-1-3{
+    position: relative;
+    width: 50%;
+    height: 50%;
+ background-color: rgb(47, 119, 214);
+ float: left;
+ }
+ .bigtwoboxright,.bigtwoboxleft{
+ height: 100%;
+ width: 50%;
+ background-color: gray;
+ float: left;
+ }
+ 
+ .box2-1{
+    position: relative;
+    float: left;
+    height: 50%;
+    width: 50%;
+    background-color: rgb(27, 85, 179);
+ }
+ 
+ .jian1 :hover{
+    transform:rotate(360deg)  scale(1.0) translate(0,0);
+    transition: 0.6s;
+ }
+ .box2-2{
+    position: relative;
+    float: left;
+    height: 50%;
+    width: 50%;
+    background-color: rgb(132, 76, 182);
+    overflow: hidden;
+ }
+ 
+ .box2-2 :hover{
+    transform:  scale(1.25);
+    transition: 0.7s;
+ }
+ 
+ .box2-3{
+    position: relative;
+    float: left;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+ }
+ .box2-3-1{
+   position: relative;
+   float: left;
+   height: 100%;
+   width: 50%;
+   background-color: rgb(27, 85, 179);
+   overflow: hidden;
+}
+.box2-3-2{
+   position: relative;
+   float: left;
+   height: 100%;
+   width: 50%;
+   background-color: rgb(27, 85, 179);
+   overflow: hidden;
+}
+ .box2-3-1 div{ width:15%; height: 100%; float: left; transition:  all 2s;}
+/* .box2-3:hover div{width:15% ;} */
+.box2-3-1 div:hover{width: 25%;}
+ 
+ .box3-1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: thistle;
+    overflow: hidden;
+ }
+ 
+ .box3-1 :hover{
+    transform:  scale(1.15);
+    transition: 0.7s;
+ }
+ 
+
+ .quare  :hover {
+   transform:  scale(1.15);
+   transition: 1s;
+}
+ .box3-2{
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    background-color: rgba(41, 148, 241, 0.5);
+    top: 50%;
+ }
+ 
+ .jian2 :hover{
+    transform:rotate(360deg)  scale(1.0) translate(0,0);
+    transition: 0.6s;
+ 
+ } 

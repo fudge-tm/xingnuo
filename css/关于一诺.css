@@ -1,0 +1,228 @@
+/* about */
+body{
+    background-image: url(../pictures/关于星诺.png)  ;
+ background-repeat:no-repeat;
+ background-attachment: fixed;
+ background-size: 100%;
+/* 使横滚动条消失 */
+ overflow-x:hidden;
+ 
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+/* 中间的字加图加字 */
+.xian1{
+position: relative;
+width: 100%;
+height: 50px;
+padding-top: 10px;
+background: white;}
+
+.xian1 span{
+    width: 2px;
+    float: left;
+ 
+ }
+
+ .abigbox{
+     position: relative;
+     width: 100%;
+     height: 300px;
+ }
+
+ .threelinesword{
+     position: relative;
+     width: 100%;
+     height: 180px;
+     background-color: rgb(255, 255, 255);
+ }
+
+
+ /* 中间图 */
+ .imgbox{
+     position: relative;
+     width: 100%;
+     height: 500px;
+     background-color: rgb(255, 255, 255);
+ }
+
+.boxone{
+    position: relative;
+    width: 80%;
+    height: 50%;
+    left: 10%;
+    right: 10%;
+    float: left;
+}
+
+.boxtwo{
+    float: left;
+    position: relative;
+    width: 80%;
+    height: 50%;
+    left: 10%;
+    right: 10%;
+}
+
+.box1{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.box1-1{
+    width:50% ;
+    height: 100%;
+    float: left;
+    background-color: sienna;
+    overflow: hidden;
+}
+ .box1-2{
+    width:50% ;
+    height: 100%;
+    float: left;
+    background-color: rgb(49, 153, 238);
+}
+
+
+.box2{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.box2-1{
+    width:50% ;
+    height: 100%;
+    float: left;
+    background-color: rgb(218, 161, 136);
+    overflow: hidden;
+}
+ .box2-2{
+    width:50% ;
+    height: 100%;
+    float: left;
+    background-color: rgb(247, 180, 8);
+}
+
+.box3{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.box3-1{
+    width:50% ;
+    height: 100%;
+    float: left;
+    background-color: rgb(255, 174, 0);
+}
+ .box3-2{
+    width:50% ;
+    height: 100%;
+    float: left;
+    background-color: rgb(15, 127, 161);
+    overflow: hidden;
+}
+
+.box4{
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(56, 137, 243);
+}
+
+.box1-1 :hover{
+    transform:  scale(1.15);
+    transition: 0.7s;
+ }
+
+ .box2-1 :hover{
+    transform:  scale(1.15);
+    transition: 0.7s;
+ }
+
+ .box3-2 :hover{
+    transform:  scale(1.15);
+    transition: 0.7s;
+ }
+
+ .u1{
+     height: 490px;
+     width: 100%;
+     position: relative;
+     
+ }
+
+ .h1{
+     width: 100%;
+     height: 150px;
+     background-color: black;
+     overflow: hidden;
+}
+
+/* SPECIAL */
+.special{
+    position: relative;
+    height: 100%;
+    background-color: white;
+ }
+ .specialword{
+    position: relative;
+    height: 600px;
+ }
+ .driver{
+    position: relative;
+    height: 900px;
+    background-color: white;
+ }
+ .driver span{
+    position: relative;
+    margin-left: 12%;
+     width: 10%;
+     float: left;
+     height: 450px;
+ }
+ .driver span>p{
+    position: absolute;
+    left: 40px;
+    bottom: 7px;
+    color: darkgray;
+ }
+ /* .carone{
+     background: url(../pictures/笔记本.jpg) 40px 40px no-repeat ;
+ }
+ .cartwo{
+     background: url(../pictures/bag2.png)  40px 40px no-repeat ;
+ }
+ .carthree{
+    background: url(../pictures/日历.png) 40px 40px no-repeat;
+ }
+ .carfour{
+     background: url(../pictures/邮票.png) 40px 40px no-repeat;
+ } */
+ .xian1{
+    width: 100%;
+    height: 20px;
+    position: relative;
+ }
+ .xian1 span{
+    width: 2px;
+    float: left;
+ }
+ .zi1{
+    height: 100px;
+    text-align: center;
+ }
+ 

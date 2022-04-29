@@ -1,0 +1,286 @@
+.action{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.xian1{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    background: white;}
+
+.xian1 button{
+    background-color:white;
+    left: 20%;
+}
+.xian1 span{
+    width: 2px;
+    float: left;
+ }
+
+ .message{
+     position: relative;
+     height: 2100px;
+     width: 80%;
+     left: 10%;
+     background-color: turquoise;
+ }
+
+ .message>div{
+     height: 350px;
+     width: 100%;
+ }
+.box1{
+     background-color:saddlebrown;
+     border-bottom: 2px solid rgb(222, 222, 223);
+ }
+ .box1-1{
+     width: 30%;
+     height: 100%;
+     background-color: rgba(255, 255, 255, 0.9);
+     float: left;
+     overflow: hidden;
+ }
+ .jian1 :hover{
+    transform:rotate(360deg)  scale(1.0) translate(0,0);
+    transition: 0.6s;
+ 
+ }
+
+ .box1-1 img:hover{
+     transform: scale(1.25);
+     transition: 0.7s;
+     overflow: hidden;
+ }
+ .box2-1 img:hover{
+    transform: scale(1.25);
+    transition: 0.7s;
+    overflow: hidden;
+}
+.box3-1 img:hover{
+    transform: scale(1.25);
+    transition: 0.7s;
+    overflow: hidden;
+}
+.box4-1 img:hover{
+    transform: scale(1.25);
+    transition: 0.7s;
+    overflow: hidden;
+}
+.box5-1 img:hover{
+    transform: scale(1.25);
+    transition: 0.7s;
+    overflow: hidden;
+}
+.box6-1 img:hover{
+    transform: scale(1.25);
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+
+.p1{background-color: rgb(9, 113, 211); 
+ }
+ .p1:hover{
+    background-color: rgb(241, 184, 26);
+ }
+
+
+ .box1-2{
+     height: 100%;
+     width: 70%;
+     background-color: rgba(255, 255, 255, 0.9);
+     float: left;
+ }
+.box2{
+    background-color:rgb(19, 177, 156);
+     border-bottom: 2px solid rgb(222, 222, 223);
+}
+
+.box2-1{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;
+    overflow: hidden;
+}
+.box2-2{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;
+}
+.box3{
+    background-color:rgb(91, 145, 245);
+    border-bottom: 2px solid rgb(180, 180, 180);
+}
+.box3-1{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;overflow: hidden;
+}
+.box3-2{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;
+}
+.box4{
+    background-color:rgb(161, 12, 241);
+    border-bottom: 2px solid rgb(222, 222, 223);
+}
+.box4-1{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;overflow: hidden;
+}
+.box4-2{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;
+}
+.box5{
+    background-color:rgb(255, 27, 225);
+    border-bottom: 2px solid rgb(222, 222, 223);
+}
+.box5-1{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;overflow: hidden;
+}
+.box5-2{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;
+}
+.box6{
+    background-color:rgb(235, 21, 21);
+    border-bottom: 3px solid rgb(222, 222, 223);
+}
+.box6-1{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;overflow: hidden;
+}
+.box6-2{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;
+}
+
+.tiaozhuan{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(223, 224, 224) transparent rgb(218, 218, 218) transparent ;
+}
+
+.left{
+    position: relative;
+    line-height: 70px;
+    height: 80px;
+    width: 300px;
+    left: 0%;
+    float: left;
+}
+
+.tiaozhuan button{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: rgb(189, 188, 188) 2xp solid;
+}
+
+.right{
+    position: relative;
+    top: 50px;
+    left: 850px;
+    float: left;
+    
+}
+
+.lun{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.vido{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+}
+.show-imgs-container {
+    height: 100%;
+}
+    .el-carousel {
+        width: 100%;
+        height: 100%;
+    }
+ 
+    .el-carousel__container {
+        width: 100%;
+        height: 100%;
+    }
+ 
+    .el-carousel__item {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+       
+       
+    }
+
+    .el-carousel__item>video {
+        width:100%;
+        height:100%;
+        position: fixed;
+        display: inline-block;
+        vertical-align: baseline;
+        object-fit: fill; 
+    }
+    .play-btn{
+        font-size: 60px;
+        color: #fff;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+   .h1{
+       height: 100px;
+       width: 1000px;
+       border-style:solid; 
+       border-width:3px; 
+       border-color:rgb(200, 196, 196);
+       border-radius: 20px;
+       margin: auto;
+       color:rgb(0, 0, 0);
+       padding-top: 10px;  
+    margin-top: 10px; }
+
+    .h2{
+        height: 320px;
+        width: 800px;
+        border-style:solid; 
+        border-width:3px; 
+        border-color:rgb(218, 217, 217);
+        border-radius: 20px;
+        margin: auto;
+        color:rgb(0, 0, 0);
+        padding-top: 10px;  
+     margin-top: 10px; }

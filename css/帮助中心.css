@@ -1,0 +1,13 @@
+/* about */
+body{
+    background-color: white;
+ background-repeat:no-repeat;
+ background-attachment: fixed;
+ background-size: 100%;
+/* 使横滚动条消失 */
+ overflow-x:hidden;
+ 
+}
+
+
+ 
