@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安铺镇介绍</title>
+    <!-- 引入图标 -->
+    <link rel="shortcut icon" href="./pictures/logo.ico">
+    <!-- 引入公共的common.css文件 -->
+    <link rel="stylesheet" href="css/common.css">
+     <!-- 引入公共的normal.css文件 -->
+     <link rel="stylesheet" href="css/normal.css">
+      <!-- 引入私有的.css文件 -->
+      <link rel="stylesheet" href="css/小镇特色.css">
+
+
+</head>
+<body>
+      <!-- 导航 -->
+      <div class="shortcut">
+        <div class="fl">  
+          <ul>
+            <li1></li1>
+            <li><img src="pictures/head.png" alt="" style=" height: 90px;"></li>
+            <li1></li1>
+            <li> <a href="index.html" > 星诺文创 </a> </li>
+            <li1></li1>
+            <!-- <li> <a href="预约检测.html">产品介绍</a>  </li>
+            <li1></li1> -->
+            <li> <a href="小镇特色.html">小镇特色</a> </li>
+            <li1></li1>
+            <li><a href="企业动态.html">企业动态</a> </li>
+            <li1></li1>
+            <li> <a href="关于星诺.html">关于星诺</a>  </li>
+            <li1></li1>
+            <li> <a href="帮助中心.html">帮助中心</a> </li>
+      </ul></div>
+        <div class="fr">
+            <ul>
+              <li style="background:  rgb(252, 252, 252) no-repeat center; width: 90px; height: 93px; text-align: center;"> </li>    
+              <li style="background: url(pictures/call.png) no-repeat center;  height: 90px; width: 200px; text-align: center;"> </li>
+              <li style="height: 90px; width: 2px ; margin-left: 50px; background-color: rgb(0, 181, 253);"></li> 
+              <!-- <li class="QR" ><img class="QRIG" src='picture/icon_wechat.png' onmouseover='src="picture/icon_wechat2.png"' onmouseout='src="picture/icon_wechat.png"'> </li> -->
+              <li class="QR" ><img class="QRIG" src='picture/icon_wechat.png'> </li>
+                <div class="QRcode">
+                  <img src="pictures/org.png" alt="">
+              </div>
+              <!-- style="background: url(picture/icon_wechat.png) no-repeat center;  height: 90px; width: 80px; text-align: center;" -->
+            </ul>
+        </div>
+    </div>
+   
+    
+
+<div  style=" position: relative; width: 100%;height: 775px;">
+  <div id="guide" style=" position: relative;width: 20%; height:775px;float: left;" > 
+    <el-row class="tac" >
+      <el-col  >
+          <el-menu
+                  style="height:775px;"
+                  default-active="1"
+                  class="el-menu-vertical-demo"
+                  background-color="#545c64"
+                  text-color="#fff"
+                  active-text-color="#ffd04b">
+              <el-menu-item index="0" disabled>
+                  <span slot="title" style="font-size: 30px; text-align: center; ">星诺帮助手册</span>
+              </el-menu-item>
+  
+              <el-menu-item index="1" @click="Showjj" >
+                <i class="el-icon-tickets" ></i>
+                <span slot="title" style="font-size: large;">公司简介</span>
+            </el-menu-item>
+  
+              <el-menu-item index="2" @click="Showbj" >
+                  <i class="el-icon-office-building" ></i>
+                  <span slot="title" style="font-size: large;">小镇背景</span>
+              </el-menu-item>
+              <el-menu-item index="3" @click="Showqj">
+                  <i class="el-icon-sunny"></i>
+                  <span slot="title"style="font-size: large;">企业前景</span>
+              </el-menu-item>
+              <el-menu-item index="4"  @click="Showrili">
+                <i class="el-icon-date"></i>
+                <span slot="title"style="font-size: large;">日历</span>
+            </el-menu-item>
+              <!-- <el-menu-item index="5"  @click="Showgg">
+                  <i class="el-icon-s-comment"></i>
+                  <span slot="title"style="font-size: large;">公告</span>
+              </el-menu-item> -->
+          </el-menu>
+      </el-col>
+      </el-row>
+  </div>
+
+
+  <div id="rili" style="width: 80%; height:775px;float: left; display: none;  " >
+    <el-calendar v-model="value">
+    </el-calendar>
+  </div>
+
+  <div id="jj" style="width: 80%; height:775px;float: left; display: block; background-color: rgb(216, 215, 215); ">
+    <br><br><br> <br>
+   <h2>&nbsp;&nbsp; 星诺文创科技有限公司创建于2022年,是以全国特色小镇、广东四大古镇之一的安铺镇的文化创意元素创办的公司，星诺文化旅游创意产品的元素源于安铺镇文化。
+     本公司通过扩张产品线，推出文具、旅游纪念品、日用品等一系列文创产品以此来满足消费者多样化的需求。</h2>
+  </div>
+
+  <div id="bj" style="width: 80%; height:775px;float: left; display: none; background-color: rgb(216, 215, 215); ">
+    <br><br><br> <br>
+   <h2>&nbsp;&nbsp;“镇”小能量大，创新故事多；“镇”小梦想大，引领新常态。安铺镇是廉江市工业、商业和文化重镇，也是全国重点镇、广东省中心镇、
+     广东省宜居示范城镇，是“广东省四大古镇之一”，入选中国十大最具影响力美食名镇，安铺镇荣获“全国卫生模范镇”、“省体育之乡”、
+     “中国十大最具影响力美食名镇”、“广东省城镇化集成技术应用示范试点镇”和“湛江市技术创新专业镇”等荣誉称号，
+     一连串金字招牌背后彰显的是安铺镇经济社会发展的蓬勃生机和活力。</h2>
+  </div>
+
+  <div id="qj" style="width: 80%; height:775px;float: left; display: none;background-color: rgb(216, 215, 215);  ">
+    <br><br><br> <br>
+   <h2>&nbsp;&nbsp;文化创意产业是一种在经济全球化背景下产生的以创造力为核心的新兴产业，近年来得到空前发展，随着人们精神追求的提升，
+     文创产品、旅游文创产品逐渐兴起，成为与日俱增的消费热点，星诺文创科技有限公司在此契机下选择在文创产业中崭露头角，
+     以文创产品作为创业切入点，重视开发设计感强的产品，以创意经济为主，注重文化与科技的融合、创意创新所发挥的作用，
+     在结合新技术、新媒体、注重营销方式之外，未来继续丰富文化体验形式和文化业态，提升安铺镇文化资源利用层次，
+     拓展安铺镇文化产业发展空间。</h2>
+  </div>
+
+  <div id="gg" style="width: 80%; height:775px;float: left; display: none;background-color: rgb(216, 215, 215);  ">
+   
+  </div>
+
+</div>
+
+      <img src="picture/aboutxia.png" style=" margin-top: 20px; position: relative;  width: 100%; height: 50px;">
+
+
+
+      <!-- 底部 -->
+      <div class="foot">
+        <div class="one"><ul>
+          <li><img src="picture/独立三方.png">
+          <h3>乡村经济</h3></li>
+          <li><img src="picture/国家标准.png">
+            <h3>国家标准</h3></li>
+          <li><img src="picture/专业技师.png">
+            <h3>专业设计</h3></li>
+          <li><img src="pictures/证书.png">
+            <h3>品质优秀</h3></li>
+        </ul></div>
+        <div class="onebig">
+          <div class="two" style="border-bottom:solid  rgba(85, 85, 85, 0.931);">
+            <dl>
+              <dt>合作小镇</dt>
+              <dd style="border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd>安铺镇</dd>
+            </dl>
+            <dl>
+              <dt>产品保障</dt>
+              <dd style=" border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd>产品介绍</dd>
+              <dd>产品体验</dd>
+            </dl>
+            
+            <dl>
+              <dt>关于星诺</dt>
+              <dd style=" border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd>关于我们</dd>
+              <dd>加入我们</dd>
+              <dd>联系我们</dd>
+            </dl>
+            <dl>
+              <dt>联系我们</dt>
+              <dd style=" border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd ><img src="picture/电话.png"  style="width: 30px; height: 30px; "><h3>&nbsp;&nbsp;电话</h3> &nbsp;  166 7595 3218</dd>
+              <dd style="border-bottom:solid  rgba(85, 85, 85, 0.931) ;">
+                <d >&nbsp;&nbsp;  时间：&nbsp;9：30-18：00</d>
+              </dd>
+              <dd style="margin-top:5px;"><img src="picture/邮箱.png" style="width: 30px; height: 30px;"><h3>&nbsp;&nbsp;邮箱</h3> &nbsp;  lnxingnuo@163.com</dd>
+            </dl>
+            <dl>
+              <dt>关注我们</dt>
+              <dd style=" border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd><img src="pictures/org.png" style="width: 100px; height: 100px; margin-top:5px;"  alt=""></dd>
+            </dl>
+          </div>
+          <div class="three">
+            <div class="footleft"> 版权所有 Copyright 2022 广东星诺文创科技有限公司 166 7595 3218  保留所有版权</div>
+            <div class="footright">分享: <img src="picture/微信.png" ><img src="picture/微博.png" > </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+
+
+      <!-- js -->
+     <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+     <script src="js/axios-0.18.0.js"></script>
+      <script src="js/vue.js"></script>
+      <script src="element-ui/lib/index.js"></script>
+      <link rel="stylesheet" href="element-ui/lib/theme-chalk/index.css">
+     
+
+      <script>
+        new Vue({
+            el:"#big",
+            methods:{
+          }
+        })
+      </script>
+      
+     
+
+      
+
+     <script>
+        new Vue({
+            el:"#guide",
+            methods: {
+      handleOpen(key, keyPath) {
+        console.log(key, keyPath);
+      },
+      handleClose(key, keyPath) {
+        console.log(key, keyPath);
+      },    
+      Showjj(){
+        document.getElementById("jj").style.display='block';
+        document.getElementById("bj").style.display='none';
+        document.getElementById("qj").style.display='none';
+        document.getElementById("rili").style.display='none';
+        document.getElementById("gg").style.display='none';
+
+
+    },
+    Showbj(){
+      document.getElementById("jj").style.display='none';
+        document.getElementById("bj").style.display='block';
+        document.getElementById("qj").style.display='none';
+        document.getElementById("rili").style.display='none';
+        document.getElementById("gg").style.display='none';
+    },
+    Showqj(){
+      document.getElementById("jj").style.display='none';
+        document.getElementById("bj").style.display='none';
+        document.getElementById("qj").style.display='block';
+        document.getElementById("rili").style.display='none';
+        document.getElementById("gg").style.display='none';
+    },
+    Showrili(){
+      document.getElementById("jj").style.display='none';
+        document.getElementById("bj").style.display='none';
+        document.getElementById("qj").style.display='none';
+        document.getElementById("rili").style.display='block';
+        document.getElementById("gg").style.display='none';
+    }   ,
+    Showgg(){
+      document.getElementById("jj").style.display='none';
+        document.getElementById("bj").style.display='none';
+        document.getElementById("qj").style.display='none';
+        document.getElementById("rili").style.display='none';
+        document.getElementById("gg").style.display='block';
+    }  
+        },
+        })
+    </script>
+
+<script>
+  new Vue({
+      el:"#rili",
+      data() {
+  return {
+    value: new Date()
+  }
+}
+  })
+</script>
+
+
+
+      <script>
+        // 微信图标
+        // 获取li元素
+        var lis=document.querySelector(".QRIG");
+        // 获取divBox的子集
+        var QRdiv=document.querySelector(".QRcode");
+        // 鼠标移入事件
+        lis.onmouseover=function(){
+                QRdiv.style.display="block";
+                lis.className="active";
+                lis.src="picture/icon_wechat2.png";
+    
+            }
+            //鼠标移出事件
+          
+          // 微信图标
+       
+          //微信二维码延迟 
+          lis.onmouseout=function(){
+              lis.src="picture/icon_wechat.png";
+                // QRdiv.style.display="none";
+                setTimeout( "QRdiv.style.display='none'",2000);//延迟2s消失
+            }
+
+       
+        
+
+      
+
+        
+               // 字从中间到两边
+         function thefrist(){
+                document.querySelector(".oneword").style.transform="scale(1)";
+                document.querySelector(".twoword").style.transform="scale(1)";
+                document.querySelector(".threeword").style.transform="scale(1)";
+      }
+// 自动执行
+window.onload = thefrist;
+
+
+      </script>
+</body>
+</html>

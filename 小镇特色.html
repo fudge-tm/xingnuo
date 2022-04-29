@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安铺镇介绍</title>
+    <!-- 引入图标 -->
+    <link rel="shortcut icon" href="./pictures/logo.ico">
+    <!-- 引入公共的common.css文件 -->
+    <link rel="stylesheet" href="css/common.css">
+     <!-- 引入公共的normal.css文件 -->
+     <link rel="stylesheet" href="css/normal.css">
+      <!-- 引入私有的.css文件 -->
+      <link rel="stylesheet" href="css/小镇特色.css">
+
+
+</head>
+<body>
+      <!-- 导航 -->
+      <div class="shortcut">
+        <div class="fl">  
+          <ul>
+            <li1></li1>
+            <li><img src="pictures/head.png" alt="" style=" height: 90px;"></li>
+            <li1></li1>
+            <li> <a href="index.html" > 星诺文创 </a> </li>
+            <li1></li1>
+            <!-- <li> <a href="预约检测.html">产品介绍</a>  </li>
+            <li1></li1> -->
+            <li> <a href="小镇特色.html">小镇特色</a> </li>
+            <li1></li1>
+            <li><a href="企业动态.html">企业动态</a> </li>
+            <li1></li1>
+            <li> <a href="关于星诺.html">关于星诺</a>  </li>
+            <li1></li1>
+            <li> <a href="帮助中心.html">帮助中心</a> </li>
+      </ul></div>
+        <div class="fr">
+            <ul>
+              <li style="background:  rgb(252, 252, 252) no-repeat center; width: 90px; height: 93px; text-align: center;"> </li>    
+              <li style="background: url(pictures/call.png) no-repeat center;  height: 90px; width: 200px; text-align: center;"> </li>
+              <li style="height: 90px; width: 2px ; margin-left: 50px; background-color: rgb(0, 181, 253);"></li> 
+              <!-- <li class="QR" ><img class="QRIG" src='picture/icon_wechat.png' onmouseover='src="picture/icon_wechat2.png"' onmouseout='src="picture/icon_wechat.png"'> </li> -->
+              <li class="QR" ><img class="QRIG" src='picture/icon_wechat.png'> </li>
+                <div class="QRcode">
+                  <img src="pictures/org.png" alt="">
+              </div>
+              <!-- style="background: url(picture/icon_wechat.png) no-repeat center;  height: 90px; width: 80px; text-align: center;" -->
+            </ul>
+        </div>
+    </div>
+   
+    
+     <!--中间的动态  -->
+     <div class="action">
+      <img src="pictures/特色小镇背景.jpg" style="position: relative; width: 100%; height: 90%;">
+      <img src="picture/aboutxia.png" style=" position: relative;  width: 100%; height: 10%;">
+     
+        <h4 class="oneword" style="  position: absolute; color: white; font-size:30px   ;transition: all .8s; left: 42.5%;top: 90px; transform: scale(0);" >全国特色小镇</h4>
+        <h2 class="twoword" style= " position: absolute;   color: white; font-size:40px;    transition: all .8s;   left: 44%;top: 130px; transform: scale(0);" >安铺镇</h2>
+        <h3 class="threeword" style="     transition: all .8s; position: absolute; height: 2px; width: 80px; background-color: white; text-align: center;  transform: scale(0);left: 45.5%; top: 190px;"></h3>
+  </div>
+
+
+
+  <div id="lun" style="position: relative;">
+    <div style="background-color: rgb(241, 156, 37);width: 200px; height: 100px;border-radius: 20%;text-align: center;line-height: 100px;margin-left: 5%;"> <h1 style="color: rgb(4, 4, 4); ">小镇景色一览</h1></div>
+   
+    <template>
+    <!--动态将图片轮播图的容器高度设置成与图片一致-->
+    <el-carousel :interval="4000" type="card" height="400px"  >
+      <!--遍历图片地址,动态生成轮播图-->
+      <el-carousel-item v-for="item in img_list" :key="item">
+        <img :src="item" alt="">
+      </el-carousel-item>
+    </el-carousel>
+  </template>
+  </div>
+
+  <div class="h1">
+   <h4>&nbsp;&nbsp;在美丽的九洲江畔，有一座历史悠久、人文荟萃的小镇，古镇里，有充满民国风情的骑楼老街，秀丽的田园风光，多彩的的文俗文化，风味独特的美食.......她就是中国特色小镇--安铺镇。</h4> 
+
+   <h4> &nbsp;&nbsp;穿行在老街中，骑楼粉墙黛瓦之间，蕴含着沧桑与斑驳，那转角处错落有致点缀着的几棵绿树、一枝红花，徜徉其间，仿佛让你梦回百年前。</h4> 
+
+   <h4>&nbsp;&nbsp;这就是安铺，一个集人文风情与美食于一身的魅力小镇！</h4> 
+  </div>
+     
+  <img src="picture/aboutxia.png" style=" margin-top: 20px; position: relative;  width: 100%; height: 50px;">
+
+<div id="vido" class="vido">
+  
+  <div style="background-color: rgb(241, 156, 37);width: 200px; height: 100px;border-radius: 20%;text-align: center;line-height: 100px;margin-left: -36%;"> <h1 style="color: rgb(4, 4, 4); ">小镇介绍</h1></div>
+  <template>
+    <div class="show-imgs-container" @mouseover="isIn = true" @mouseout="isIn = false">
+        <el-carousel
+            :interval="cutTime"
+            arrow="always"
+            :autoplay="autoplay"
+            trigger="click"
+            :indicator-position="autoplay?'':'none'"
+            @change="getIndex">
+            <el-carousel-item v-for="(item,index) in videos" :key="index">
+                <!--视频播放器 -->
+                <video :ref="'videoPlayer' + index" :controls="isIn">
+                    <source :src="item.src" type="video/mp4">
+                    您的浏览器不支持Video标签。
+                </video>
+                <i v-show="!isPlay" class="play-btn el-icon-video-play" @click="playVideo"></i>
+                <i v-show="isPlay && isIn" class="play-btn el-icon-video-pause" @click="pauseVideo"></i>
+            </el-carousel-item>
+        </el-carousel>
+    </div>
+</template>
+
+  </div>
+  <div class="h2">
+    <h1 style="text-align: center;">安铺镇是广东省四大古镇之一</h1>
+      <h3>&nbsp;&nbsp;荣获 “中国美食名镇”、“全国重点镇”、“广东省宜居示范城镇”、“广东省中心镇”、省“ 体育之乡”、省“体育先进镇”、“全国亿万农民健身活动先进乡镇”、“广东省卫生先进镇”、“广东省年糕之乡”、“全国丙等卫生模范镇”等众多称号！</h3>
+      <br>
+        <h2>广东地名故事-安铺</h2>
+      <h3>&nbsp;&nbsp;安铺独特的城市名片，代表和安铺古镇的发展历史。兴建在安铺东街、南街、西街、中大街、‘苏杭街’等安铺老街上的鳞次栉比的骑楼，形成了安铺文明在外的骑楼群，骑楼与古街的相映成趣诉说着百姓人家的市井生活。</h3>
+      <br>
+      <h2>风土.人情</h2>
+      <h3>&nbsp;&nbsp;拥有五百年的历史，是广东省四大古镇之一，2004年被列为全国重点镇。</h3>
+       <h3>&nbsp;&nbsp;安铺非物质文化遗产丰富，龙舟文化历史悠远，每年延续有龙舟赛、闹元宵游花街、特色美食节等传统。</h3>
+   
+
+      </div>
+      <img src="picture/aboutxia.png" style=" margin-top: 20px; position: relative;  width: 100%; height: 50px;">
+
+
+
+      <!-- 底部 -->
+      <div class="foot">
+        <div class="one"><ul>
+          <li><img src="picture/独立三方.png">
+          <h3>乡村经济</h3></li>
+          <li><img src="picture/国家标准.png">
+            <h3>国家标准</h3></li>
+          <li><img src="picture/专业技师.png">
+            <h3>专业设计</h3></li>
+          <li><img src="pictures/证书.png">
+            <h3>品质优秀</h3></li>
+        </ul></div>
+        <div class="onebig">
+          <div class="two" style="border-bottom:solid  rgba(85, 85, 85, 0.931);">
+            <dl>
+              <dt>合作小镇</dt>
+              <dd style="border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd>安铺镇</dd>
+            </dl>
+            <dl>
+              <dt>产品保障</dt>
+              <dd style=" border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd>产品介绍</dd>
+              <dd>产品体验</dd>
+            </dl>
+            
+            <dl>
+              <dt>关于星诺</dt>
+              <dd style=" border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd>关于我们</dd>
+              <dd>加入我们</dd>
+              <dd>联系我们</dd>
+            </dl>
+            <dl>
+              <dt>联系我们</dt>
+              <dd style=" border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd ><img src="picture/电话.png"  style="width: 30px; height: 30px; "><h3>&nbsp;&nbsp;电话</h3> &nbsp;  166 7595 3218</dd>
+              <dd style="border-bottom:solid  rgba(85, 85, 85, 0.931) ;">
+                <d >&nbsp;&nbsp;  时间：&nbsp;9：30-18：00</d>
+              </dd>
+              <dd style="margin-top:5px;"><img src="picture/邮箱.png" style="width: 30px; height: 30px;"><h3>&nbsp;&nbsp;邮箱</h3> &nbsp;  lnxingnuo@163.com</dd>
+            </dl>
+            <dl>
+              <dt>关注我们</dt>
+              <dd style=" border-bottom: solid  rgba(255, 255, 255, 0.931); width: 30px;"></dd>
+              <dd><img src="pictures/org.png" style="width: 100px; height: 100px; margin-top:5px;"  alt=""></dd>
+            </dl>
+          </div>
+          <div class="three">
+            <div class="footleft"> 版权所有 Copyright 2022 广东星诺文创科技有限公司 166 7595 3218  保留所有版权</div>
+            <div class="footright">分享: <img src="picture/微信.png" ><img src="picture/微博.png" > </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+
+
+      <!-- js -->
+     <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+     <script src="js/axios-0.18.0.js"></script>
+      <script src="js/vue.js"></script>
+      <script src="element-ui/lib/index.js"></script>
+      <link rel="stylesheet" href="element-ui/lib/theme-chalk/index.css">
+     
+     
+     <script>
+        new Vue({
+            el:"#lun",
+            data(){
+          return{
+            // 图片地址数组
+            img_list:[
+            "pictures/lun7.png",
+              "pictures/lun1.png",
+              "pictures/lun2.png",
+              "pictures/lun3.png",
+              "pictures/lun4.png",
+              "pictures/lun5.png",
+              "pictures/lun6.png",
+              
+            
+            ],
+            // 图片父容器高度
+            bannerHeight :600,
+            // 浏览器宽度
+            screenWidth :0,
+          }
+        }
+        })
+    </script>
+
+
+<script>
+  new Vue({
+      el:"#vido",
+      data() {
+        return {
+            autoplay: true,//是否自动切换
+            isPlay:false,//播放状态
+            isIn:false,//鼠标是否位于播放器内
+            cutTime:5000,//轮播时间，单位毫秒
+            nowIndex: 0,
+            videos:[
+                {
+                    src:"video/481.mp4"
+                },
+                {
+                    src:"video/480p.mp4"
+                },
+            ]
+        }
+    },
+    mounted() {
+        //初始监听第一个视频
+        this.listenVideo();
+    },
+    methods: {
+        //获取走马灯的索引
+        getIndex(nowIndex, oldIndex){
+            //用户可能在上个视频未播放完毕就切换
+            //此时需要暂停上个视频并把时间归零，否则影响对当前视频的监听逻辑
+            let myVideo = this.$refs['videoPlayer' + oldIndex];
+            myVideo[0].pause();
+            myVideo[0].currentTime = 0;
+            this.nowIndex = nowIndex;
+            this.listenVideo();
+        },
+        //监听视频的播放、暂停、播放完毕等事件
+        listenVideo(){
+            //注意：这样获取的dom是一个数组，必须加上[0]索引才能正确的添加事件
+            let myVideo = this.$refs['videoPlayer' + this.nowIndex];
+            //监听播放
+            myVideo[0].addEventListener("play",()=>{
+                this.autoplay = false;
+                this.isPlay = true;
+            });
+            //监听暂停
+            myVideo[0].addEventListener("pause",()=>{
+                this.autoplay = true;
+                this.isPlay = false;
+            });
+            //监听播放完毕
+            myVideo[0].addEventListener("ended",()=>{
+                //时间归零
+                myVideo[0].currentTime = 0;
+                this.autoplay = true;
+                this.isPlay = false;
+            });
+        },
+        //播放视频
+        playVideo(){
+            //注意：这样获取的dom是一个数组，必须加上[0]索引才能正确的添加事件
+            let myVideo = this.$refs['videoPlayer' + this.nowIndex];
+            myVideo[0].play();
+        },
+        //暂停视频
+        pauseVideo(){
+            //注意：这样获取的dom是一个数组，必须加上[0]索引才能正确的添加事件
+            let myVideo = this.$refs['videoPlayer' + this.nowIndex];
+            myVideo[0].pause();
+        },
+    }
+      
+
+      
+  }
+  )
+</script>
+
+
+      <script>
+        // 微信图标
+        // 获取li元素
+        var lis=document.querySelector(".QRIG");
+        // 获取divBox的子集
+        var QRdiv=document.querySelector(".QRcode");
+        // 鼠标移入事件
+        lis.onmouseover=function(){
+                QRdiv.style.display="block";
+                lis.className="active";
+                lis.src="picture/icon_wechat2.png";
+    
+            }
+            //鼠标移出事件
+          
+          // 微信图标
+       
+          //微信二维码延迟 
+          lis.onmouseout=function(){
+              lis.src="picture/icon_wechat.png";
+                // QRdiv.style.display="none";
+                setTimeout( "QRdiv.style.display='none'",2000);//延迟2s消失
+            }
+
+       
+        
+
+      
+
+        
+               // 字从中间到两边
+         function thefrist(){
+                document.querySelector(".oneword").style.transform="scale(1)";
+                document.querySelector(".twoword").style.transform="scale(1)";
+                document.querySelector(".threeword").style.transform="scale(1)";
+      }
+// 自动执行
+window.onload = thefrist;
+
+
+      </script>
+</body>
+</html>
